@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import json
 
-be_url = "http://localhost:8000"
+be_url = st.secrets["be_url_server"]
 st.title("AI Interview Helper Bot")
 
 with st.form("Details"):
